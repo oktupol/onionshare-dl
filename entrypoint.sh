@@ -98,6 +98,7 @@ if [ -n "$(echo $downloaded_file | grep '.zip$')" ]; then
   unzip -l "$DOWNLOAD_DIR/$downloaded_file"
 fi
 
+# If download-dir isn't mounted, show instructions to copy file
 if [ ! -n "$(mount | grep " $DOWNLOAD_DIR ")" ]; then
   echo ""
   echo "Copy the file onto your machine with:"
