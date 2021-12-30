@@ -13,10 +13,14 @@ You need to have [Docker](https://docker.com) on your machine.
 
 Download files from an OnionShare.
 
+```bash
+docker run ghcr.io/oktupol/onionshare-dl
+```
+
 Provide the onion-host and private key as parameters:
 
 ```bash
-docker run ghcr.io/oktupol/onionshare-dl-o http://tw6hk[...].onion -k ZU5HN[...]
+docker run ghcr.io/oktupol/onionshare-dl -o http://tw6hk[...].onion -k ZU5HN[...]
 ```
 
 or as environment variables:
