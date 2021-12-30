@@ -20,14 +20,14 @@ docker run ghcr.io/oktupol/onionshare-dl
 Provide the onion-host and private key as parameters:
 
 ```bash
-docker run ghcr.io/oktupol/onionshare-dl -o http://tw6hk[...].onion -k ZU5HN[...]
+docker run ghcr.io/oktupol/onionshare-dl -o http://tw6hk...d.onion -k ZU5HN...3Q
 ```
 
 or as environment variables:
 
 ```bash
-export ONION_HOST=http://tw6hk[...].onion
-export PRIVATE_KEY=ZU5HN[...]
+export ONION_HOST=http://tw6hk...d.onion
+export PRIVATE_KEY=ZU5HN...3Q
 docker run -e ONION_HOST -e PRIVATE_KEY ghcr.io/oktupol/onionshare-dl
 ```
 
