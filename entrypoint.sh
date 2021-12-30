@@ -92,7 +92,6 @@ cd $old_pwd
 
 # If zip, list file contents
 downloaded_file="$(ls $DOWNLOAD_DIR)"
-echo "Downloaded file $downloaded_file"
 if [ -n "$(echo $downloaded_file | grep '.zip$')" ]; then
   echo "File listing of $downloaded_file:"
   unzip -l "$DOWNLOAD_DIR/$downloaded_file"
